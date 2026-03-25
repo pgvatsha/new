@@ -14,35 +14,73 @@ color:#222;
 line-height:1.6;
 }
 
-/* =====================================
+/* ===============================
    NAVBAR
-===================================== */
+================================ */
+
 nav{
-background:#0b3d91;
-color:white;
-padding:15px 30px;
+background:#163f8c;
+padding:15px 0;
+}
+
+nav .container{
 display:flex;
-justify-content:space-between;
 align-items:center;
-flex-wrap:wrap;
+justify-content:space-between; /* LOGO LEFT + MENU RIGHT */
 }
 
-nav h2{
-font-size:22px;
+.logo{
+color:white;
+font-size:24px;
+font-weight:bold;
+margin:0;
 }
 
-nav a{
+/* MENU RIGHT SIDE */
+.menu{
+list-style:none;
+display:flex;
+align-items:center;
+gap:25px;
+margin:0;
+padding:0;
+margin-left:auto;   /* ⭐ pushes menu to right */
+}
+
+.menu li{
+position:relative;
+}
+
+.menu a{
 color:white;
 text-decoration:none;
-margin-left:20px;
 font-weight:bold;
-transition:0.3s;
 }
 
-nav a:hover{
-opacity:0.8;
+/* DROPDOWN */
+.dropdown-menu{
+display:none;
+position:absolute;
+background:white;
+top:35px;
+left:0;
+min-width:160px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+list-style:none;
+padding:10px 0;
 }
 
+.dropdown-menu li{
+padding:8px 15px;
+}
+
+.dropdown-menu a{
+color:#163f8c;
+}
+
+.dropdown:hover .dropdown-menu{
+display:block;
+}
 /* =====================================
    CONTAINER
 ===================================== */
