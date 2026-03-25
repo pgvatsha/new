@@ -81,6 +81,16 @@ color:#163f8c;
 .dropdown:hover .dropdown-menu{
 display:block;
 }
+
+/* dropdown default hidden */
+.dropdown-menu {
+  display: none;
+}
+
+/* JS se open hoga */
+.dropdown-menu.show {
+  display: block;
+}
 /* =====================================
    CONTAINER
 ===================================== */
