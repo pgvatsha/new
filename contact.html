@@ -31,13 +31,22 @@
 <section class="page container">
 <h2>Contact Us</h2>
 
-<form>
-<input type="text" placeholder="Name">
-<input type="email" placeholder="Email">
-<textarea placeholder="Message"></textarea>
-<button>Send Inquiry</button>
-</form>
+<form action="https://formsubmit.co/YOURMAIL@gmail.com" method="POST">
 
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<textarea name="message" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Inquiry</button>
+
+<!-- hidden settings -->
+<input type="hidden" name="_subject" value="New Inquiry from Website">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+
+</section>
 </section>
 
 <footer>© 2026 ABC Pipes & Fittings</footer>
